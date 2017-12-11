@@ -1,0 +1,15 @@
+{
+  "name": "goglobal-nodejs-sdk",
+  "version": "1.0.0",
+  "description": "GoGlobal nodejs SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@alaa_github:AlaaAttya/go-global-nodejs-sdk.git"
+  },
+  "author": "Alaa Attya <alaa.attya91@gmail.com>",
+  "license": "ISC"
+}
