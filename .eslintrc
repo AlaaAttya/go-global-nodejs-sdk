@@ -1,0 +1,58 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "plugins": [
+        "jest"
+    ],
+    "rules": {
+        "babel/object-curly-spacing": 0,
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/valid-expect": "error",
+        "no-console": 0,
+        "indent": [
+            2,
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "no-plusplus": [
+            2,
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-multi-spaces": 0,
+        "newline-per-chained-call": 1,
+        "yoda": [
+            "off",
+            "always"
+        ],
+        "radix": [
+            "error",
+            "as-needed"
+        ],
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "padded-blocks": [
+            "error",
+            {
+                "classes": "always"
+            }
+        ],
+        "no-restricted-syntax": "off",
+        "class-methods-use-this": "off",
+        "default-case": "off",
+        "global-require":"off",
+        "import/no-dynamic-require":"off"
+    },
+    "extends": "airbnb/base"
+}
