@@ -4,7 +4,7 @@
   "description": "GoGlobal nodejs SDK",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/eslint/bin/eslint.js lib"
+    "test": "node_modules/eslint/bin/eslint.js lib && jest test/lib/transformers/hotel-search-payload-transformer.test.js"
   },
   "repository": {
     "type": "git",
