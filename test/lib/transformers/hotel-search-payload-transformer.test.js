@@ -4,24 +4,24 @@ describe('should have valid xml payload', () => {
 
     it('should have valid json data', () => {
         const searchParam = {
-            'checkInDate': '2017-09-11',
-            'checkoutDate': '2017-09-15',
-            'cityId': 123,
-            'rooms': []
+            checkInDate: '2017-09-11',
+            checkoutDate: '2017-09-15',
+            cityId: 123,
+            rooms: [],
         };
 
         const credentials = {
             soapActionUrl: 'http://www.goglobal.travel/MakeRequest',
-            agency: '1520350',
+            agency: '123',
             username: 'alaa',
             password: '11232342fgtrh',
-            apiVersion: 1
+            apiVersion: 1,
         };
 
         const expectedJsonResult = {
             Root: {
                 Header: {
-                    Agency: "1520350",
+                    Agency: '123',
                     User: 'alaa',
                     Password: '11232342fgtrh',
                     Operation: 'HOTEL_SEARCH_REQUEST',
