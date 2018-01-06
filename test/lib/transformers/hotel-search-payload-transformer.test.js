@@ -1,8 +1,5 @@
-import { prepareJsonData, transformSearchPayload, __RewireAPI__ } from './../../../lib/transformers/hotel-search-payload-transformer';
+import { transformSearchPayload, __RewireAPI__ } from './../../../lib/transformers/hotel-search-payload-transformer';
 
-
-// eslint-disable-next-line no-underscore-dangle
-const transformRoomsPayload = __RewireAPI__.__get__('transformRoomsPayload');
 
 describe('should have valid xml payload', () => {
 
@@ -49,7 +46,8 @@ describe('should have valid xml payload', () => {
                 },
             },
         };
-
+        // eslint-disable-next-line no-underscore-dangle
+        const prepareJsonData = __RewireAPI__.__get__('prepareJsonData');
         expect(prepareJsonData(searchParam, credentials)).toEqual(expectedJsonResult);
 
     });
@@ -103,6 +101,10 @@ describe('should have valid xml payload', () => {
     });
 
     it('should transform valid rooms array', () => {
+
+        // eslint-disable-next-line no-underscore-dangle
+        const transformRoomsPayload = __RewireAPI__.__get__('transformRoomsPayload');
+
         const mockedRoomsData = [
             {
                 adults: 2,
